@@ -30,5 +30,3 @@ def pgcd(a1, b1):
 
     return pgcd
 
-
-pgcd(float(input('Premier nombre: ')), float(input('Deuxième nombre: ')))
