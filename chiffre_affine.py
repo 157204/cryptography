@@ -24,27 +24,26 @@ def chiffrage_lettre(a, b, text):
         x = ord(i)
         if x >= 97 and x <= 122:
             x -= - 97
-            print(x)
+            #print(x)
             y = a * x + b
             print('y = ', a, '*', x, '+', 'b = ', y)
             while y > 26:
                 y %= 26
-                print(y)
+                #print(y)
             print('y = ', y, '[26]')
             y = alphabet[y]
             textchiffre.append(y)
         elif x >= 65 and x <= 90:
             x -= - 65
-            print(x)
+            #print(x)
             y = a * x + b
             print('y = ', a, '*', x, '+', 'b = ', y)
             while y > 26:
                 y %= 26
-                print(y)
+                #print(y)
             print('y = ', y, '[26]')
             y = alphabet[y]
+            print(y)
             textchiffre.append(y)
-
-
 
     return textchiffre
